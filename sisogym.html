@@ -97,7 +97,7 @@
         <span class="w3-large" style="padding-left: 24px;">Personal training & </span>
         <br>
         <span class="w3-large" style="padding-left: 24px;">Small group trainingen</span>
-        <p><a href="#about" class="w3-button color-two w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Proefsessie Aanvragen</a></p>
+        <p><a href="#contact" class="w3-button color-two w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Proefsessie Aanvragen</a></p>
       </div>
       <div class="w3-display-bottomright w3-text-grey w3-xxlarge" style="padding:24px 48px">
         <a href="https://m.facebook.com/people/Siso-Gym/100074808583966/"><i class="font-color-two fa fa-facebook-official w3-hover-opacity"></i></a>
@@ -310,7 +310,7 @@
               <span class="w3-opacity">(op basis van 1x in de week)</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-              <a href="mailto:email@email.com?subject=Individuele Les Aanvragen&body=Bedankt voor uw aanvraag%21 %0D%0AAls u de onderstaande informatie invult kom ik zo snel mogelijk bij u terug%21%0D%0A%0D%0ALocatie%3A Siso Gym %2F aan huis%0D%0AVoorkeur dag en%2Fof tijdstip%3A%0D%0ANaam%3A%0D%0ATelefoonnummer%3A%0D%0A%0D%0AAls u deze mail verzendt hoop ik graag snel samen een training in te plannen.%0D%0A%0D%0ASportieve groeten%2C%0D%0ALaura Driel%0D%0A">
+              <a href="#form">
                 <button class="w3-button color-two w3-padding-large">Sign Up</button>
               </a>
             </li>
@@ -330,7 +330,7 @@
               <span class="w3-opacity">(op basis van 1x in de week)</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-              <a href="mailto:email@email.com?subject=Duo Les Aanvragen&body=Bedankt voor uw aanvraag%21 %0D%0AAls u de onderstaande informatie invult kom ik zo snel mogelijk bij u terug%21%0D%0A%0D%0ALocatie%3A Siso Gym %2F aan huis%0D%0AVoorkeur dag en%2Fof tijdstip%3A%0D%0ANaam%3A%0D%0ATelefoonnummer%3A%0D%0A%0D%0AAls u deze mail verzendt hoop ik graag snel samen een training in te plannen.%0D%0A%0D%0ASportieve groeten%2C%0D%0ALaura Driel%0D%0A">
+              <a href="form">
                 <button class="w3-button color-two w3-padding-large">Sign Up</button>
               </a>
             </li>
@@ -348,7 +348,7 @@
               <span class="w3-opacity">per les per persoon</span>
             </li>
             <li class="w3-light-grey w3-padding-24">
-              <a href="mailto:email@email.com?subject=Groepsles Aanvragen&body=Bedankt voor uw aanvraag%21 %0D%0AAls u de onderstaande informatie invult kom ik zo snel mogelijk bij u terug%21%0D%0A%0D%0ALocatie%3A Siso Gym %2F aan huis%0D%0AVoorkeur dag en%2Fof tijdstip%3A%0D%0ANaam%3A%0D%0ATelefoonnummer%3A%0D%0A%0D%0AAls u deze mail verzendt hoop ik graag snel samen een training in te plannen.%0D%0A%0D%0ASportieve groeten%2C%0D%0ALaura Driel%0D%0A">
+              <a href="form">
                 <button class="w3-button color-two w3-padding-large">Sign Up</button>
               </a>
             </li>
@@ -383,6 +383,29 @@
             </a>
           </p>
           <br>
+
+          <div id="form">
+            <p>Neem contact op:</p>
+            <form action="https://formsubmit.co/lottetjebbes@email.com" method="POST">
+              Naam:<br>
+              <input type="text" name="name" required><br><br>
+              E-mail adres:<br>
+              <input type="email" name="email" required><br><br>
+              Soort les: <br>
+              <input type="radio" id="individueel" name="les" value="Individueel">
+              <label for="individueel">Individueel</label><br>
+              <input type="radio" id="duo" name="les" value="duo">
+              <label for="duo">Duo</label><br>
+              <input type="radio" id="kleine-groep" name="kleine_groep" value="Kleine groep">
+              <label for="kleine-groep">Kleine groep</label><br>
+              <input type="radio" id="vraag" name="les" value="vraag">
+              <label for="vraag">Ik heb een andere vraag: </label><br>
+              <textarea id="bericht" name="bericht" rows="4" cols="50" placeholder="Typ uw bericht hier..."></textarea><br>
+              <input type="hidden" name="_subject" value=les>
+              <input type="hidden" name="_autoresponse" value="Hallo%2C%0A%0ABedankt%20voor%20uw%20aanvraag%20bij%20Siso%20Gym!%0A%0AIk%20zal%20proberen%20om%20zo%20snel%20mogelijk%20bij%20u%20terug%20te%20komen.%0A%0ASportieve%20groeten%2C%0ALaura%20Driel">
+              <br><button class="w3-button color-two w3-padding-large" type="submit">Stuur</button>
+            </form>
+          </div>
         </div>
         
         <div class="w3-col m6">
